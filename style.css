@@ -1,0 +1,16 @@
+html, body { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+} 
+
+body {
+	background:#fff;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 100;
+	color: #ECF5FF;
+}
