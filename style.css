@@ -5,10 +5,11 @@ html, body {
 } 
 
 body {
-	background:#fff;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 400;
+	background:#000;
+	font-family: 'Roboto', serif;
+	font-weight: 300;
 	font-size: 32px;
+	color:#fff;
 }
 
 h1,h2,h3,h4 {
@@ -21,4 +22,6 @@ p {
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 24px;
+	margin-bottom: 42px;
+	min-height: 42px;
 }

@@ -1,41 +1,72 @@
-[{
-	"name": "Hexate",
-	"line": "Ira"
-}, {
-	"name": "",
-	"line": "[chanting] Ira Ira!"
-}, {
-	"name": "Ira",
-	"line": "Right. It’s happening. I have got to move this shit around."
-}, {
-	"name": "Hexate",
-	"line": "Ira? What are you doing Ira?"
-}, {
-	"name": "Ira",
-	"line": "It’s got to go. This – look. Sick of it."
-}, {
-	"name": "",
-	"line": "I just need it to be - not this anymore."
-}, {
-	"name": "Hexate",
-	"line": "Are you tired Ira?"
-}, {
-	"name": "Ira",
-	"line": "No"
-}, {
-	"name": "Hexate",
-	"line": "You don’t miss sleep?"
-}, {
-	"name": "Ira",
-	"line": "I'm not tired."
-}, {
-	"name": "",
-	"line": "For fucks sake!"
-}, {
-	"name": "",
-	"line": "[loud agressive bang]"
-}, {
-	"name": "Housemate",
-	"line": "OI IRA! Go to sleep!"
-}]
+{
+	"captions": [{
+		"name": "HEXATE",
+		"line": "Ira"
+	}, {
+		"name": "",
+		"line": "[chanting] Ira Ira!"
+	}, {
+		"name": "IRA",
+		"line": "Right. It’s happening. I have got to move this shit around."
+	}, {
+		"name": "HEXATE",
+		"line": "Ira? What are you doing Ira?"
+	}, {
+		"name": "IRA",
+		"line": "It’s got to go. This – look. Sick of it."
+	}, {
+		"name": "",
+		"line": "I just need it to be - not this anymore."
+	}, {
+		"name": "HEXATE",
+		"line": "Are you tired Ira?"
+	}, {
+		"name": "IRA",
+		"line": "No"
+	}, {
+		"name": "HEXATE",
+		"line": "You don’t miss sleep?"
+	}, {
+		"name": "IRA",
+		"line": "I'm not tired."
+	}, {
+		"name": "",
+		"line": "For fucks sake!"
+	}, {
+		"name": "",
+		"line": "[loud agressive bang]"
+	}, {
+		"name": "HOUSEMATE",
+		"line": "OI IRA! Go to sleep!"
+	}, {
+		"name": "HEXATE",
+		"line": "You seem a little agitated Ira."
+	}, {
+		"name": "",
+		"line": "Jumpy... Anger, or..."
+	}, {
+		"name": "",
+		"line": "Was it the banging of his fist on your door?"
+	}, {
+		"name": "",
+		"line": "Familiar..."
+	}, {
+		"name": "",
+		"line": "[snickering] What do you call a girl who hasn’t slept in days?"
+	}, {
+		"name": "IRA",
+		"line": "I’m going for a walk."
+	}, {
+		"name": "HEXATE",
+		"line": "Try again."
+	}, {
+		"name": "",
+		"line": "That sort of attention seeking won’t help"
+	}, {
+		"name": "",
+		"line": "What do you say?"
+	}, {
+		"name": "",
+		"line": "What do you call a girl who hasn’t slept in days?"
+	}]
 }
