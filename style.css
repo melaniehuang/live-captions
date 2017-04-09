@@ -6,11 +6,19 @@ html, body {
 
 body {
 	background:#fff;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 32px;
 }
 
 h1,h2,h3,h4 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 100;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
 	color: #ECF5FF;
+}
+
+p {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 24px;
 }

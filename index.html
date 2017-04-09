@@ -3,20 +3,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 	<head> 
 	 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	 	<title>Subtitles</title>
+	 	<title>Captions</title>
 	    <link type="image/gif" rel="shortcut icon" href="favicon.ico"/></link>
 	    <link href="style.css" rel="stylesheet" type="text/css" media="screen, handheld"></link> 
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Titillium+Web:200' rel='stylesheet' type='text/css'></link>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,700" rel="stylesheet">
 		<script language="javascript" type="text/javascript" src="/scripts/p5.js"></script>
+		<script language="javascript" type="text/javascript" src="/scripts/jquery-3.2.0.min.js"></script>
+		<script language="javascript" type="text/javascript" src="/scripts/caption.js"></script>
 	</head>
 		
 	<body>
-	  <div id="container">
-		<video id="video" controls preload="metadata">
-	      <source src="video/hotdogs.mp4" type="video/mp4">
-	      <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
-		</video>
-	  </div>
+	  <p id="demo">Hello</p>
+
+<!-- <video id="vid" width="1200" controls="">
+	    <source src="/video/rehersal.mp4" type="video/mp4">
+	    <track label="English" kind="subtitles" srclang="en" src="/subtitles/caption.vtt" default>
+	 </video> -->
 	</body> 
 
 </html>
