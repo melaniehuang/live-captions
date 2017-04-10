@@ -68,5 +68,338 @@
 	}, {
 		"name": "",
 		"line": "What do you call a girl who hasn’t slept in days?"
+	}, {
+		"name": "IRA",
+		"line": "Easy. I’m so glad your free - no really, I -"
+	}, {
+		"name": "",
+		"line": "I’ve missed you too. Ok, bye!"
+	}, {
+		"name": "",
+		"line": "[hangs up phone]"	
+	}, {
+		"name": "OLD MAN",
+		"line": "Hey, girl!"
+	}, {
+		"name": "",
+		"line": "Ya’ nipples are pointing, love!"	
+	}, {
+		"name": "IRA",
+		"line": "I need water"
+	}, {
+		"name": "TESS",
+		"line": "No, ciggie first. That Uber was way too stressful."
+	}, {
+		"name": "IRA",
+		"line": "But water…"	
+	}, {
+		"name": "TESS",
+		"line": "What was with the thousand questions?"
+	}, {
+		"name": "",
+		"line": "I feel like I should make a complaint-"	
+	}, {
+		"name": "IRA",
+		"line": "A complaint? It’s 2am, the guy was probably"
+	}, {
+		"name": "",
+		"line": "trying to stay awake-"
+	}, {
+		"name": "TESS",
+		"line": "[imitating driver]\"What do you get up to for fun?\""
+	}, {
+		"name": "",
+		"line": "\"Are you seeing anyone at the moment?\""
+	}, {
+		"name": "",
+		"line": "Come on Ira, you don’t owe that stranger shit"
+	}, {
+		"name": "",
+		"line": "- especially not your damned love life."
+	}, {
+		"name": "IRA",
+		"line": "It is damned, isn’t it."
+	}, { 
+		"name": "TESS",
+		"line": "[addressing audience] Will she ever get wet again?"
+	}, {
+		"name": "MIA",
+		"line": "Oh hi, sorry – we tried the front door,"
+	}, {
+		"name": "",
+		"line": "but - I’m a friend of Jane’s."
+	}, {
+		"name": "TESS",
+		"line": "Housemate?"
+	}, {
+		"name": "IRA",
+		"line": "Ah yeah."	
+	}, {
+		"name": "",
+		"line": "Cool. Uh, she’s at work"
+	}, {
+		"name": "MIA",
+		"line": "Sorry, she told me she finished at one"	
+	}, {
+		"name": "",
+		"line": "and I was nearby…."
+	}, {
+		"name": "",
+		"line": "I’m Mia by the way, and this is-"
+	}, {
+		"name": "LEE",
+		"line": "Lee. I’m just tagging along."
+	}, {
+		"name": "MIA",
+		"line": "Would it be cool if we hung here till she got home?"
+	}, {
+		"name": "",
+		"line": "I’ve left some stuff here/"
+	}, {
+		"name": "IRA",
+		"line": "/Sure"
+	}, {
+		"name": "LEE",
+		"line": "Sure/ you have"
+	}, {
+		"name": "",
+		"line": "Were you talking to me?"
+	}, {
+		"name": "",
+		"line": "Oh sorry, that was weird…"
+	}, {
+		"name": "MIA",
+		"line": "Babe do you need some water?"
+	}, {
+		"name": "",
+		"line": "I’ll go grab some, can you roll for me?"
+	}, {
+		"name": "TESS",
+		"line": "I’m going to get a jumper."
+	}, {
+		"name": "LEE",
+		"line": "Sorry about - before/"
+	}, {
+		"name": "IRA",
+		"line": "No, don’t apologise."
+	}, {
+		"name": "",
+		"line": "Is everything ok between you?"
+	}, {
+		"name": "",
+		"line": "Wow, I just met you –"
+	}, {
+		"name": "",
+		"line": "you don’t have to answer, I’m/"
+	}, {
+		"name": "LEE",
+		"line": "It’s/ fine"
+	}, {
+		"name": "IRA",
+		"line": "Assuming you’re together"
+	}, {
+		"name": "LEE",
+		"line": "We are."
+	}, {
+		"name": "",
+		"line": "She’s cheated on me before"
+	}, {
+		"name": "IRA",
+		"line": "Do you know-"
+	}, {
+		"name": "LEE",
+		"line": "Her ex."
+	}, {
+		"name": "",
+		"line": "It’s ok, I made it clear after that"
+	}, {
+		"name": "",
+		"line": "I’m not going to take things too seriously anymore."
+	}, {
+		"name": "IRA",
+		"line": "But you’re – together"
+	}, {
+		"name": "LEE",
+		"line": "You’re attracted to her?"
+	}, {
+		"name": "IRA",
+		"line": "No. I’m… Why do you still see her"
+	}, {
+		"name": "",
+		"line": "– when she hurt you like that?"
+	}, {
+		"name": "LEE",
+		"line": "[shrugs]"
+	}, {
+		"name": "",
+		"line": "You draw?"
+	}, {
+		"name": "IRA",
+		"line": "Oh, that/"
+	}, {
+		"name": "LEE",
+		"line": "looks like fun. I wish I was brave enough to try"
+	}, {
+		"name": "IRA",
+		"line": "A too convenient distraction."
+	}, {
+		"name": "",
+		"line": "Do you study?"
+	}, {
+		"name": "LEE",
+		"line": "Engineering. You?"
+	}, {
+		"name": "IRA",
+		"line": "Arts. As in, I don’t really know"		
+	}, {
+		"name": "LEE",
+		"line": "Do any of us really know?"	
+	}, {
+		"name": "TESS",
+		"line": "Ira the funniest thing just happened -"	
+	}, {
+		"name": "",
+		"line": "– come inside for a sec!"	
+	}, {
+		"name": "TESS",
+		"line": "What the hell was that?"	
+	}, {
+		"name": "",
+		"line": "Are you even trying to conceal your lady boner,"
+	}, {
+		"name": "",
+		"line": "cause her girlfriend-"	
+	}, {
+		"name": "IRA",
+		"line": "SHhh, fuck Tess shut up! What do you-"	
+	}, {
+		"name": "TESS",
+		"line": "Look I just got texted to work tomorrow,"	
+	}, {
+		"name": "",
+		"line": "so I need to leave like now – but –"	
+	}, {
+		"name": "",
+		"line": "this conversation isn’t over."	
+	}, {
+		"name": "IRA",
+		"line": "Yes it is. I’ll call you tomorrow?"	
+	}, {
+		"name": "TESS",
+		"line": "Yes you will."	
+	}, {
+		"name": "",
+		"line": "I left my pouch outside, walk out with me?"	
+	}, {
+		"name": "IRA",
+		"line": "Sorry – don’t stop on my account!"		
+	}, {
+		"name": "HEXATE",
+		"line": "Look at you"		
+	}, {
+		"name": "",
+		"line": "Mmm that felt"		
+	}, {
+		"name": "",
+		"line": "Nice"		
+	}, {
+		"name": "",
+		"line": "Its been a while"		
+	}, {
+		"name": "",
+		"line": "Since you’ve felt"		
+	}, {
+		"name": "",
+		"line": "That"		
+	}, {
+		"name": "",
+		"line": "Anything"		
+	}, {
+		"name": "",
+		"line": "Little Ira"	
+    }, {
+		"name": "",
+		"line": "[phone ringing]"
+    }, {
+		"name": "IRA",
+		"line": "Hello?"
+    }, {
+		"name": "IRA'S MOTHER",
+		"line": "Goooood morning sunshine!"	
+    }, {
+		"name": "",
+		"line": "How is my little fruit blossom today?"	
+    }, {
+		"name": "IRA",
+		"line": "Ahh too early, can I -"	
+    }, {
+		"name": "IRA'S MOTHER",
+		"line": "Are you sleeping well?"	
+    }, {
+		"name": "",
+		"line": "Eating breakfast?"	
+    }, {
+		"name": "",
+		"line": "I can send more sleeping pills-"		
+    }, {
+		"name": "IRA",
+		"line": "No, yes- I don’t want the pills."	
+    }, {
+		"name": "",
+		"line": "They make me shit weird"	
+    }, {
+		"name": "IRA'S MOTHER",
+		"line": "IRA!"	
+    }, {
+		"name": "",
+		"line": "Don’t use those words please!"	
+    }, {
+		"name": "",
+		"line": "That is not how I raised you."	
+    }, {
+		"name": "IRA",
+		"line": "Who raised who?"	
+    }, {
+		"name": "IRA'S MOTHER",
+		"line": "Ira, don’t be rude."
+    }, {
+		"name": "",
+		"line": "Be light, be –"	
+    }, {
+		"name": "",
+		"line": "happy,"	
+    }, {
+		"name": "",
+		"line": "be that bright little shining star"	
+    }, {
+		"name": "",
+		"line": "I know I raised you to be."
+    }, {
+		"name": "IRA",
+		"line": "look mum I’ve got to-"	
+    }, {
+		"name": "IRA'S MOTHER",
+		"line": "you sound happy – at least"
+    }, {
+		"name": "",
+		"line": "relaxed? you did sleep well then?"
+    }, {
+		"name": "",
+		"line": "Have good dreams?"
+    }, {
+		"name": "HEXATE",
+		"line": "Go on Ira"	
+    }, {
+		"name": "",
+		"line": "Tell her your dreams"
+    }, {
+		"name": "",
+		"line": "What did you see?"
+    }, {
+		"name": "IRA",
+		"line": "I’ve got to go. Bye."	
+    }, {
+		"name": "",
+		"line": "Be brave."	
 	}]
 }

@@ -15,6 +15,7 @@ function draw(){
 }
 
 function keyPressed(){
+
   if (lineNum => -1 && lineNum < lines.captions.size -1){
 
 	  if (keyCode === RIGHT_ARROW) {
