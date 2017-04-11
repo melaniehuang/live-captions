@@ -1,5 +1,5 @@
 {
-	"captions": [{
+	"sceneTwo": [{
 		"name": "HEXATE",
 		"line": "Ira"
 	}, {
@@ -68,7 +68,9 @@
 	}, {
 		"name": "",
 		"line": "What do you call a girl who hasn’t slept in days?"
-	}, {
+	}],
+		
+	"sceneThree": [{
 		"name": "IRA",
 		"line": "Easy. I’m so glad your free - no really, I -"
 	}, {
