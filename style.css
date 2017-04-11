@@ -25,3 +25,9 @@ p {
 	margin-bottom: 42px;
 	min-height: 42px;
 }
+
+p:hover{
+   text-shadow: 0 0 42px white; 
+   color: transparent;      
+   transition: all 0.9s ease; 
+}

@@ -13,7 +13,6 @@ function setup(){
 }
 
 function draw(){
-
 }
 
 function keyPressed() {
@@ -32,12 +31,13 @@ function keyPressed() {
 	//   console.log(sceneNum);  
 	//   break;
  //  }
+  
 
   var numSceneLines = lines.sceneTwo.length;
-  console.log(lines.sceneTwo.length);
-  
+
   if (keyCode == RIGHT_ARROW) {
     if (lineNum < numSceneLines - 1){
+      //unblur
       lineNum++;
       selectLine();
     } else {
@@ -45,14 +45,16 @@ function keyPressed() {
     }
   } else if (keyCode == LEFT_ARROW) {
     if (lineNum > 0){
+      //unblur
       lineNum--;
       selectLine();
     }
   } else if (keyCode === DOWN_ARROW) {
-    document.getElementById("demo").innerHTML =  ""; 
+    blurOut();
+    //document.getElementById("demo").innerHTML =  ""; 
   }
 
-  return false; // prevent default
+  return false;
 }
 
 function selectLine(){
@@ -64,4 +66,13 @@ function selectLine(){
 	} else {
 	  document.getElementById("demo").innerHTML = "[ " + character + " ]: " + speech; 
 	} 
+}
+
+function blurOut(){
+	document.getElementById("demo").style.textShadow = "0 0 42px white";
+    document.getElementById("demo").style.color = "transparent";
+    document.getElementById("demo").style.transition = "all 0.9s ease";
+    setTimeout(function (){
+      document.getElementById("demo").innerHTML =  ""; 
+    }, 900);     
 }
