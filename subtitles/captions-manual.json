@@ -745,6 +745,20 @@
 		"name": "",
 		"line": "he can talk you through the available options."
 	}],
+	
+	"sceneSixWords": [{
+		"line": "Stupid"
+	}, {
+		"line": "Worthless"
+	}, {
+		"line": "Stop me"
+	}, {
+		"line": "Shame"
+	}, {
+		"line": "Hopeless"
+	}, {
+		"line": "Failure"
+	}],
 
 	"sceneSeven": [{
 		"name": "IRA",
@@ -896,6 +910,28 @@
     }, {
 		"name": "",
 		"line": "[whistling]"
+	}],
+	
+	"sceneSevenWords": [{
+		"line": "Filth"
+	}, {
+		"line": "Can we play too?"
+	}, {
+		"line": "little whore"
+	}, {
+		"line": "bites"
+	}, {
+		"line": "scratch"
+	}, {
+		"line": "spine"
+	}, {
+		"line": "dig deep little nails"
+	}, {
+		"line": "mark her quick"
+	}, {
+		"line": "gouge"
+	}, {
+		"line": ""
 	}],
 
 	"sceneEight": [{
@@ -1461,91 +1497,7 @@
 	}],
 
 	"sceneTen": [{
-		"name": "",
-		"line": "I didn’t fill the prescription,"
-    }, {
-		"name": "",
-		"line": "if that’s what you’re wondering."
-    }, {
-		"name": "",
-		"line": "There are no protagonists yet to emerge."
-    }, {
-		"name": "",
-		"line": "My room is still a mess;"
-    }, {
-		"name": "",
-		"line": "my relationships are waiting to miraculously appear…"
-    }, {
-		"name": "",
-		"line": "But, I slept a full eight hours last night."
-    }, {
-		"name": "",
-		"line": "I talked to some random guy on the tram"
-    }, {
-		"name": "",
-		"line": "after seeing Dr Bunt."
-    }, {
-		"name": "",
-		"line": "I told him everything."
-    }, {
-		"name": "",
-		"line": "Poor guy, probably didn’t expect a summary"
-    }, {
-		"name": "",
-		"line": "of my last three years with a"
-    }, {
-		"name": "",
-		"line": "\"hey, are you ok?\"."
-    }, {
-		"name": "",
-		"line": "I told him about her."
-    }, {
-		"name": "",
-		"line": "That I can’t help but feel"
-    }, {
-		"name": "",
-		"line": "like it’s my fault if anything happens to her."
-    }, {
-		"name": "",
-		"line": "Because I never reported anything."
-    }, {
-		"name": "",
-		"line": "He told me I shouldn’t hold onto my guilt,"
-    }, {
-		"name": "",
-		"line": "and that if I was really worried,"
-    }, {
-		"name": "",
-		"line": "I should contact her."
-    }, {
-		"name": "",
-		"line": "I couldn’t stop thinking, what if I do -"
-    }, {
-		"name": "",
-		"line": "and she tells him,"
-    }, {
-		"name": "",
-		"line": "and it comes back to me and suddenly"
-    }, {
-		"name": "",
-		"line": "he really is standing in front of me,"
-    }, {
-		"name": "",
-		"line": "accusing me of accusing him of…"
-    }, {
-		"name": "",
-		"line": "Doing what he did."
-    }, {
-		"name": "",
-		"line": "I messaged her last night."
-    }, {
-		"name": "",
-		"line": "I don’t know if she’ll reply."
-    }, {
-		"name": "",
-		"line": "But I feel more awake now."
-    }, {
-		"name": "",
-		"line": "I’m ready, if she does."
+		"name": "IRA",
+		"line": "I didn’t fill the prescription, if that’s what you’re wondering. There are no protagonists yet to emerge. My room is still a mess; my relationships are waiting to miraculously appear… </br></br>But, I slept a full eight hours last night. </br></br>I talked to some random guy on the tram after seeing Dr Bunt. told him everything. Poor guy, probably didn’t expect a summary of my last three years with a \"hey, are you ok?\".</br></br>I told him about her.</br></br>That I can’t help but feel like it’s my fault if anything happens to her. </br></br>Because I never reported anything. He told me I shouldn’t hold onto my guilt, and that if I was really worried, I should contact her. I couldn’t stop thinking, what if I do - and she tells him, and it comes back to me and suddenly he really is standing in front of me, accusing me of accusing him of... </br></br>Doing what he did.</br></br>I messaged her last night. I don’t know if she’ll reply. But I feel more awake now. I’m ready, if she does."
 	}]
 }

@@ -1,6 +1,17 @@
 var lines;
-var lineNum;
-var sceneNum;
+var lineNum = -1;
+var captionColor = "white";
+
+var monoNum = -1;
+var monoOn = false;
+
+var wordNum = -1;
+var wordOn = false;
+
+var paintOn = false;
+var paintCanvas;
+
+var vidOn = false;
 
 function preload() {
   var request = "/subtitles/captions-manual.json";
@@ -8,71 +19,139 @@ function preload() {
 }
 
 function setup(){
-  lineNum = -1;
-  sceneNum = "sceneTwo";
+  paintCanvas = createCanvas(windowWidth,windowHeight);
+  paintCanvas.position(0,0);  
+
+  noStroke();
+  rectMode(CORNERS);
+  origin = createVector(random(10,windowWidth-10),random(10,windowHeight-10)); 
 }
 
 function draw(){
+  blendMode(MULTIPLY); 
+  rothko();
 }
 
 function keyPressed() {
+  //Hexate Video Scene 1
+  if (keyCode === 86 && vidOn == false) {
+    vidOn = true;
+    document.getElementById("vidHexate").style.visibility = "visible";
+  } else if (keyCode === 86 && vidOn == true){
+    vidOn = false;
+    document.getElementById("vidHexate").style.visibility = "hidden";    
+  }
 
- //  switch(key) {
- //    case '1': 
- //      sceneNum = "sceneOne";
-	//   console.log(sceneNum);  
-	//   break;
-	// case '2': 
-	//   sceneNum = "sceneTwo";
-	//   console.log(sceneNum);  
-	//   break;
- //    case '3': 
-	//   sceneNum = "sceneThree";
-	//   console.log(sceneNum);  
-	//   break;
- //  }
-  
-
-  var numSceneLines = lines.sceneTwo.length;
-
-  if (keyCode == RIGHT_ARROW) {
+  //Regular Captions
+  var numSceneLines = lines.sceneSeven.length;
+  if (keyCode === RIGHT_ARROW) {
     if (lineNum < numSceneLines - 1){
-      //unblur
+      captionSharp();
       lineNum++;
       selectLine();
     } else {
-      document.getElementById("demo").innerHTML =  "";
+      lineNum++;
+      blurOut();
     }
-  } else if (keyCode == LEFT_ARROW) {
+  } else if (keyCode === LEFT_ARROW) {
     if (lineNum > 0){
-      //unblur
+      captionSharp();
       lineNum--;
       selectLine();
+    } else {
+      lineNum--;
+      blurOut();
     }
   } else if (keyCode === DOWN_ARROW) {
     blurOut();
-    //document.getElementById("demo").innerHTML =  ""; 
+  }
+
+  if (keyCode === 80 && paintOn == false){
+    paintOn = true;
+    paintCanvas.style("visibility", "visible");
+  } else if (keyCode === 80 && paintOn == true){
+    paintOn = false;
+    paintCanvas.style("visibility", "hidden");
+  }
+
+  //Hexate Scene 6 and 7
+  if (keyCode === 87){
+    bigWords();
+  } 
+
+  //Scene 10 Monologue
+  if (keyCode === 77) {
+    scrollText();
   }
 
   return false;
 }
 
 function selectLine(){
-	var character = lines.sceneTwo[lineNum].name;
-	var speech = lines.sceneTwo[lineNum].line;
+	var character = lines.sceneSeven[lineNum].name;
+	var speech = lines.sceneSeven[lineNum].line;
 
 	if (character == ""){
-	  document.getElementById("demo").innerHTML =  speech; 
+	  document.getElementById("pCaption").innerHTML =  speech; 
 	} else {
-	  document.getElementById("demo").innerHTML = "[ " + character + " ]: " + speech; 
+    if (captionColor == "white"){
+      captionColor = "yellow";
+    } else {
+      captionColor = "white";
+    }
+
+    document.getElementById("pCaption").style.color = captionColor;
+	  document.getElementById("pCaption").innerHTML = "[ " + character + " ]: " + speech; 
 	} 
 }
 
+function bigWords(){
+  var wordLength = lines.sceneSevenWords.length;
+
+  if (wordNum == wordLength-1){
+    wordNum = -1;
+  }
+
+  wordNum++;
+  var word = lines.sceneSevenWords[wordNum].line;
+
+  document.getElementById("pWords").style.marginLeft = int(random(-400,400))+"px";
+  document.getElementById("pWords").style.marginTop = int(random(0,400))+"px";
+  document.getElementById("pWords").innerHTML =  word; 
+}
+
+function scrollText() {
+    var charMono = lines.sceneTen[0].name;
+    var lineMono = lines.sceneTen[0].line;
+    document.getElementById("pScroll").innerHTML = "[ " + charMono + " ]: " + lineMono; 
+    
+    var elem = document.getElementById("pScroll");
+     
+    var pos = 800;
+    var id = setInterval(frame, 12);
+    function frame() {
+        elem.style.visibility = "visible"; 
+        if (pos == -3600) {
+            clearInterval(id);
+        } else {
+            pos--; 
+            elem.style.top = pos + 'px'; 
+        }
+    }
+}
+
 function blurOut(){
-	document.getElementById("demo").style.textShadow = "0 0 42px white";
-    document.getElementById("demo").style.color = "transparent";
-    document.getElementById("demo").style.transition = "all 0.9s ease";
-    setTimeout(function (){
-      document.getElementById("demo").innerHTML =  ""; 
-    }, 900);     
+	document.getElementById("pCaption").style.textShadow = "0 0 100px #D4DBFF";
+  document.getElementById("pCaption").style.color = "transparent";
+  document.getElementById("pCaption").style.transition = "all 0.4s ease";
+  
+  setTimeout(function (){
+    document.getElementById("pCaption").innerHTML =  ""; 
+  }, 500);     
+}
+
+function captionSharp(){
+  document.getElementById("pCaption").style.textShadow = "0 0 0px #D4DBFF";
+  document.getElementById("pCaption").style.color = captionColor;
+  document.getElementById("pCaption").style.transition = "all 0.4s ease";    
 }

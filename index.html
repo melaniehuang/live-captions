@@ -6,15 +6,32 @@
 	 	<title>Captions</title>
 	    <link type="image/gif" rel="shortcut icon" href="favicon.ico"/></link>
 	    <link href="style.css" rel="stylesheet" type="text/css" media="screen, handheld"></link> 
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,700" rel="stylesheet">
+        
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn:700,700i" rel="stylesheet">
+
 		<script language="javascript" type="text/javascript" src="/scripts/p5.js"></script>
+		<script language="javascript" type="text/javascript" src="/scripts/p5.dom.js"></script>
 		<script language="javascript" type="text/javascript" src="/scripts/jquery-3.2.0.min.js"></script>
+	  	<script language="javascript" type="text/javascript" src="/scripts/rothko.js"></script>	
 	</head>
 		
 	<body>
+	  <section id="container">
+		  <p id="pCaption"></p>
+		  <p id="pScroll"></p>
+		  <p id="pWords"></p>
+      </section>
 	  
-	  <p id="demo"></p>
-	 
+	  <div id="paintLayer">
+	  </div>
+
+	  <video id = "vidHexate" playsinline autoplay muted loop>
+        <source src="/videos/mask.mp4" type="video/mp4">
+      </video>
+
 	  <script language="javascript" type="text/javascript" src="/scripts/caption.js"></script>
+
 	</body> 
 </html>
