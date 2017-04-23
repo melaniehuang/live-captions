@@ -145,8 +145,8 @@ function showWords(words) {
 }
 
 function scrollText() {
-    var charMono = scenes.sceneTen[0].name;
-    var lineMono = scenes.sceneTen[0].line;
+    var charMono = scenes[9]["lines"][0].name;
+    var lineMono = scenes[9]["lines"][0].line;
     document.getElementById("pScroll").innerHTML = "[ " + charMono + " ]: " + lineMono; 
     
     var elem = document.getElementById("pScroll");
@@ -169,7 +169,6 @@ function blurOut(){
   document.getElementById("pCaption").style.color = "transparent";
   document.getElementById("pCaption").style.transition = "all 0.4s ease";
 
-  
   setTimeout(function (){
     document.getElementById("pCaption").innerHTML =  ""; 
   }, 400);     
