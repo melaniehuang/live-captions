@@ -138,7 +138,7 @@ function showWords(words) {
 
     setTimeout(function(){
       showWords(words.slice(1, words.length))
-    }, 1500);
+    }, 1800);
   } else {
     showWord("");
   }  
@@ -180,43 +180,10 @@ function captionSharp(){
   document.getElementById("pCaption").style.transition = "all 0.4s ease";    
 }
 
-/*
-
-    "sceneSixWords": [{
-      "line": "Let me go"
-    }, {
-      "line": "Ira"
-    }, {
-      "line": "Don't touch me"
-    }, {
-      "line": "Stupid"
-    }, {
-      "line": "Unwanted"
-    }, {
-      "line": "Complete"
-    }, {
-      "line": "Shame"
-    }, {
-      "line": "Hopeless"
-    }, {
-      "line": "Worthless"
-    }, {
-      "line": "Idiot"
-    }, {
-      "line": "Stop me"
-    }, {
-      "line": "Ira"
-    }, {
-      "line": "Hopeless"
-    }, {
-      "line": "Failure"
-      }, {
-      "line": ""
-    }]
-  
+/*  
 
     "sceneSevenWords": [{
-      "line": "Filth"
+      "line": "Filth", "Can we play too?", "little whore", "bites", "scratch", "spine", "dig deep little nails", "mark her quick", "gouge"
     }, {
       "line": "Can we play too?"
     }, {

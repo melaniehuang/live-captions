@@ -23,7 +23,7 @@
 		}, {
 			"name": "IRA",
 			"line": "It’s got to go. This – look. Sick of it.",
-			"showWords": ["Failure", "Don't look at me", "Stupid"]
+			"showWords": ["Let me go", "Ira", "Don't touch me", "Stupid", "Unwanted", "Complete",  "Shame", "Hopeless", "Worthless", "Idiot", "Stop me", "Ira", "Hopeless", "Failure"]
 		}, {
 			"name": "",
 			"line": "I just need it to be - not this anymore."
@@ -555,7 +555,9 @@
 			"line": "following us. Me."
 		}, {
 			"name": "HEXATE",
-			"line": "[whispering words in background]"
+			"line": "[whispering words in background]",
+			"showWords": ["Let me go", "Ira", "Don't touch me", "Stupid", "Unwanted", "Complete",  "Shame", "Hopeless", "Worthless", "Idiot", "Stop me", "Ira", "Hopeless", "Failure"]
+
 		}, {
 			"name": "IRA",
 			"line": "I can taste his breath, smell his"
@@ -788,7 +790,8 @@
 			"line": "Do you want to kiss me?"
 		}, {
 			"name": "HEXATE",
-			"line": "Ira"
+			"line": "Ira",
+			"showWords": ["Filth", "Can we play too?", "little whore", "bites", "scratch", "spine", "dig deep little nails", "mark her quick", "gouge"]
 		}, {
 			"name": "",
 			"line": "You / filth"
