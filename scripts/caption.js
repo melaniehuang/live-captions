@@ -1,16 +1,11 @@
 var scenes;
-//var currentLine = -1;
 var captionColor = "white";
 
 var monoNum = -1;
 var monoOn = false;
 
-var wordOn = false;
-
 var paintOn = false;
 var paintCanvas;
-
-var vidOn = false;
 
 var currentScene = 0;
 var currentLine = -1;
@@ -35,15 +30,6 @@ function draw(){
 }
 
 function keyPressed() {
-  //Hexate Video Scene 1
-  if (keyCode === 86 && vidOn == false) {
-    vidOn = true;
-    document.getElementById("vidHexate").style.visibility = "visible";
-  } else if (keyCode === 86 && vidOn == true){
-    vidOn = false;
-    document.getElementById("vidHexate").style.visibility = "hidden";    
-  }
-
   //Regular Captions
   var numSceneLines = scenes[currentScene]["lines"].length;
 
@@ -54,7 +40,7 @@ function keyPressed() {
       selectLine();
     } else {
       blurOut();
-      goToNextScene(); // TODO: Implement.
+      goToNextScene();
     }
   } else if (keyCode === LEFT_ARROW) {
     if (currentLine > 0){
@@ -63,7 +49,7 @@ function keyPressed() {
       selectLine();
     } else {
       blurOut();
-      goToPreviousScene(); // TODO: Implement.
+      goToPreviousScene();
     }
   } else if (keyCode === DOWN_ARROW) {
     blurOut();
@@ -76,11 +62,6 @@ function keyPressed() {
     paintOn = false;
     paintCanvas.style("visibility", "hidden");
   }
-
-  //Hexate Scene 6 and 7
-//  if (keyCode === 87){
- //   bigWords();
-//  } 
 
   //Scene 10 Monologue
   if (keyCode === 77) {
@@ -109,7 +90,7 @@ function selectLine(){
 	}
 
   if (line["showWords"]) {
-    showWords(line["showWords"]); // TODO: Implement.
+    showWords(line["showWords"]);
   }
 
   if (line["showVideo"]) {
@@ -122,8 +103,25 @@ function selectLine(){
 }
 
 function goToNextScene() {
-  currentScene++;
-  currentLine = -1;
+  if (currentScene < scenes.length) {
+    currentScene++;
+    currentLine = -1;
+  }
+}
+
+function goToPreviousScene() {
+  if (currentScene > 0) {
+    currentScene--;
+    currentLine = scenes[currentScene]["lines"].length;
+  }
+}
+
+function showVideo() {
+  document.getElementById("vidHexate").style.visibility = "visible";
+}
+
+function hideVideo() {
+  document.getElementById("vidHexate").style.visibility = "hidden";  
 }
 
 function showWord(word){

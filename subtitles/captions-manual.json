@@ -44,13 +44,15 @@
 			"line": "For fucks sake!"
 		}, {
 			"name": "",
-			"line": "[loud agressive bang]"
+			"line": "[loud agressive bang]",
+			"showVideo": "true"
 		}, {
 			"name": "HOUSEMATE",
 			"line": "OI IRA! Go to sleep!"
 		}, {
 			"name": "HEXATE",
-			"line": "You seem a little agitated Ira."
+			"line": "You seem a little agitated Ira.",
+			"hideVideo": "true"
 		}, {
 			"name": "",
 			"line": "Jumpy... Anger, or..."
