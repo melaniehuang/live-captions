@@ -6,12 +6,10 @@ html, body {
 
 body {
 	background:#19191E;
-	font-family: 'Roboto', serif;
-	font-weight: 300;
-	font-size: 32px;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 400;
+	font-size: 38px;
 	color:#5F5E6B;
-    /* White */
-	/*Yellow ffff00*/
 	overflow:hidden;
 }
 
@@ -43,7 +41,7 @@ canvas {
     left: 0px;
     top: 0px;
     z-index: -4;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #container {
@@ -54,24 +52,25 @@ canvas {
 }
 
 #pScroll {
-	font-family: "Helvetica",sans-serif;
+	font-family: 'Fjalla One',sans-serif;
 	position: relative;
 	visibility: hidden;
-    width:800px;
+    width:600px;
     margin-top: 0px;
     text-align: center;
     font-size: 52px;
-    font-weight: 600;
-    text-transform: uppercase;
+    line-height: 62px;
+    /*font-weight: 600;
+    text-transform: uppercase;*/
     color:#fff;
 }
 
 #pWords {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Fjalla One', serif;
 	font-weight: 700;
 	font-size: 120px;
 	margin: 0 auto;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: transparent;
-	text-shadow: 0 0 40px rgba(255,255,255,0.5);
+	text-shadow: 0 0 30px rgba(255,255,255,0.8);
 }

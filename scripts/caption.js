@@ -1,11 +1,10 @@
-var lines;
-var lineNum = -1;
+var scenes;
+//var currentLine = -1;
 var captionColor = "white";
 
 var monoNum = -1;
 var monoOn = false;
 
-var wordNum = -1;
 var wordOn = false;
 
 var paintOn = false;
@@ -13,9 +12,12 @@ var paintCanvas;
 
 var vidOn = false;
 
+var currentScene = 0;
+var currentLine = -1;
+
 function preload() {
   var request = "/subtitles/captions-manual.json";
-  lines = loadJSON(request); 
+  scenes = loadJSON(request); 
 }
 
 function setup(){
@@ -43,24 +45,25 @@ function keyPressed() {
   }
 
   //Regular Captions
-  var numSceneLines = lines.sceneSeven.length;
+  var numSceneLines = scenes[currentScene]["lines"].length;
+
   if (keyCode === RIGHT_ARROW) {
-    if (lineNum < numSceneLines - 1){
+    if (currentLine < numSceneLines - 1){
       captionSharp();
-      lineNum++;
+      currentLine++;
       selectLine();
     } else {
-      lineNum++;
       blurOut();
+      goToNextScene(); // TODO: Implement.
     }
   } else if (keyCode === LEFT_ARROW) {
-    if (lineNum > 0){
+    if (currentLine > 0){
       captionSharp();
-      lineNum--;
+      currentLine--;
       selectLine();
     } else {
-      lineNum--;
       blurOut();
+      goToPreviousScene(); // TODO: Implement.
     }
   } else if (keyCode === DOWN_ARROW) {
     blurOut();
@@ -75,9 +78,9 @@ function keyPressed() {
   }
 
   //Hexate Scene 6 and 7
-  if (keyCode === 87){
-    bigWords();
-  } 
+//  if (keyCode === 87){
+ //   bigWords();
+//  } 
 
   //Scene 10 Monologue
   if (keyCode === 77) {
@@ -88,11 +91,12 @@ function keyPressed() {
 }
 
 function selectLine(){
-	var character = lines.sceneSeven[lineNum].name;
-	var speech = lines.sceneSeven[lineNum].line;
+  var line = scenes[currentScene]["lines"][currentLine];
+	var character = line.name;
+	var speech = line.line;
 
 	if (character == ""){
-	  document.getElementById("pCaption").innerHTML =  speech; 
+	  document.getElementById("pCaption").innerHTML = speech; 
 	} else {
     if (captionColor == "white"){
       captionColor = "yellow";
@@ -102,27 +106,49 @@ function selectLine(){
 
     document.getElementById("pCaption").style.color = captionColor;
 	  document.getElementById("pCaption").innerHTML = "[ " + character + " ]: " + speech; 
-	} 
-}
+	}
 
-function bigWords(){
-  var wordLength = lines.sceneSevenWords.length;
-
-  if (wordNum == wordLength-1){
-    wordNum = -1;
+  if (line["showWords"]) {
+    showWords(line["showWords"]); // TODO: Implement.
   }
 
-  wordNum++;
-  var word = lines.sceneSevenWords[wordNum].line;
+  if (line["showVideo"]) {
+    showVideo();
+  }
 
-  document.getElementById("pWords").style.marginLeft = int(random(-400,400))+"px";
-  document.getElementById("pWords").style.marginTop = int(random(0,400))+"px";
-  document.getElementById("pWords").innerHTML =  word; 
+  if (line["hideVideo"]) {
+    hideVideo();
+  }
+}
+
+function goToNextScene() {
+  currentScene++;
+  currentLine = -1;
+}
+
+function showWord(word){
+  var pWords = document.getElementById("pWords");
+
+  pWords.style.marginLeft = int(random(-400,400))+"px";
+  pWords.style.marginTop = int(random(0,400))+"px";
+  pWords.innerHTML =  word; 
+}
+
+function showWords(words) {
+  if (words.length > 0) {
+    showWord(words[0]);
+
+    setTimeout(function(){
+      showWords(words.slice(1, words.length))
+    }, 1500);
+  } else {
+    showWord("");
+  }  
 }
 
 function scrollText() {
-    var charMono = lines.sceneTen[0].name;
-    var lineMono = lines.sceneTen[0].line;
+    var charMono = scenes.sceneTen[0].name;
+    var lineMono = scenes.sceneTen[0].line;
     document.getElementById("pScroll").innerHTML = "[ " + charMono + " ]: " + lineMono; 
     
     var elem = document.getElementById("pScroll");
@@ -141,17 +167,75 @@ function scrollText() {
 }
 
 function blurOut(){
-	document.getElementById("pCaption").style.textShadow = "0 0 100px #D4DBFF";
+	document.getElementById("pCaption").style.textShadow = "0 0 100px "+captionColor;
   document.getElementById("pCaption").style.color = "transparent";
   document.getElementById("pCaption").style.transition = "all 0.4s ease";
+
   
   setTimeout(function (){
     document.getElementById("pCaption").innerHTML =  ""; 
-  }, 500);     
+  }, 400);     
 }
 
 function captionSharp(){
-  document.getElementById("pCaption").style.textShadow = "0 0 0px #D4DBFF";
+  document.getElementById("pCaption").style.textShadow = "0 0 0px "+captionColor;
   document.getElementById("pCaption").style.color = captionColor;
   document.getElementById("pCaption").style.transition = "all 0.4s ease";    
 }
+
+/*
+
+    "sceneSixWords": [{
+      "line": "Let me go"
+    }, {
+      "line": "Ira"
+    }, {
+      "line": "Don't touch me"
+    }, {
+      "line": "Stupid"
+    }, {
+      "line": "Unwanted"
+    }, {
+      "line": "Complete"
+    }, {
+      "line": "Shame"
+    }, {
+      "line": "Hopeless"
+    }, {
+      "line": "Worthless"
+    }, {
+      "line": "Idiot"
+    }, {
+      "line": "Stop me"
+    }, {
+      "line": "Ira"
+    }, {
+      "line": "Hopeless"
+    }, {
+      "line": "Failure"
+      }, {
+      "line": ""
+    }]
+  
+
+    "sceneSevenWords": [{
+      "line": "Filth"
+    }, {
+      "line": "Can we play too?"
+    }, {
+      "line": "little whore"
+    }, {
+      "line": "bites"
+    }, {
+      "line": "scratch"
+    }, {
+      "line": "spine"
+    }, {
+      "line": "dig deep little nails"
+    }, {
+      "line": "mark her quick"
+    }, {
+      "line": "gouge"
+    }, {
+      "line": ""
+    }]*/
