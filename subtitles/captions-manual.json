@@ -2,13 +2,22 @@
 		"name": "Scene One",
 		"lines": [{
 			"name": "",
-			"line": ""
+			"line": "",
+			"hideVideo": "true"
+		},{
+			"name": "",
+			"line": "",
+			"showVideo": "true"
 		}]
 	},
 
 {
 		"name": "Scene Two",
 	  	"lines": [{
+			"name": "",
+			"line": "",
+			"hideVideo": "true"
+		}, {	  	
 			"name": "HEXATE",
 			"line": "Ira"
 		}, {
@@ -22,8 +31,7 @@
 			"line": "Ira? What are you doing Ira?"
 		}, {
 			"name": "IRA",
-			"line": "It’s got to go. This – look. Sick of it.",
-			"showWords": ["Let me go", "Ira", "Don't touch me", "Stupid", "Unwanted", "Complete",  "Shame", "Hopeless", "Worthless", "Idiot", "Stop me", "Ira", "Hopeless", "Failure"]
+			"line": "It’s got to go. This – look. Sick of it."
 		}, {
 			"name": "",
 			"line": "I just need it to be - not this anymore."
@@ -44,15 +52,13 @@
 			"line": "For fucks sake!"
 		}, {
 			"name": "",
-			"line": "[loud agressive bang]",
-			"showVideo": "true"
+			"line": "[loud aggressive bang]"
 		}, {
 			"name": "HOUSEMATE",
 			"line": "OI IRA! Go to sleep!"
 		}, {
 			"name": "HEXATE",
-			"line": "You seem a little agitated Ira.",
-			"hideVideo": "true"
+			"line": "You seem a little agitated Ira."
 		}, {
 			"name": "",
 			"line": "Jumpy... Anger, or..."
@@ -92,9 +98,6 @@
 			"name": "",
 			"line": "I’ve missed you too. Ok, bye!"
 		}, {
-			"name": "",
-			"line": "[hangs up phone]"
-		}, {
 			"name": "OLD MAN",
 			"line": "Hey, girl!"
 		}, {
@@ -128,7 +131,7 @@
 			"line": "trying to stay awake-"
 		}, {
 			"name": "TESS",
-			"line": "[imitating driver]\"What do you get up to for fun?\""
+			"line": "[imitating driver] \"What do you get up to for fun?\""
 		}, {
 			"name": "",
 			"line": "\"Are you seeing anyone at the moment?\""
@@ -144,6 +147,9 @@
 		}, {
 			"name": "TESS",
 			"line": "[addressing audience] Will she ever get wet again?"
+		}, {
+			"name": "IRA",
+			"line": "You can laugh but it's a serious que-"
 		}, {
 			"name": "MIA",
 			"line": "Oh hi, sorry – we tried the front door,"
@@ -189,6 +195,9 @@
 		}, {
 			"name": "",
 			"line": "Oh sorry, that was weird…"
+		}, {
+			"name": "",
+			"line": "[all girls laughing]"
 		}, {
 			"name": "MIA",
 			"line": "Babe do you need some water?"
@@ -277,6 +286,9 @@
 			"name": "LEE",
 			"line": "Do any of us really know?"
 		}, {
+			"name": "",
+			"line": "[both girls laugh]"
+		}, {
 			"name": "TESS",
 			"line": "Ira the funniest thing just happened -"
 		}, {
@@ -315,14 +327,24 @@
 		}, {
 			"name": "IRA",
 			"line": "Sorry – don’t stop on my account!"
+		}, {
+			"name": "HEXATE",
+			"line": "[growls]"
 		}]
 	},
 
 	{
 		"name": "Scene Five",
 		"lines": [{
+			"name": "",
+			"line": "",
+			"hideVideo": "true",
+			"hideWords": "true"
+		}, {
 			"name": "HEXATE",
-			"line": "Look at you"
+			"line": "Look at you",
+			"showWords": ["Look at you","Nice","It's been a while","Anything", "Little Ira","It's been a while","Anything", "Little Ira"],
+			"showVideo": "true"
 		}, {
 			"name": "",
 			"line": "Mmm that felt"
@@ -331,7 +353,7 @@
 			"line": "Nice"
 		}, {
 			"name": "",
-			"line": "Its been a while"
+			"line": "It's been a while"
 		}, {
 			"name": "",
 			"line": "Since you’ve felt"
@@ -343,7 +365,9 @@
 			"line": "Anything"
 		}, {
 			"name": "",
-			"line": "Little Ira"
+			"line": "Little Ira",
+			"hideVideo": "true",
+			"hideWords": "true"
 		}, {
 			"name": "",
 			"line": "[phone ringing]"
@@ -426,7 +450,7 @@
 			"name": "IRA",
 			"line": "I’ve got to go. Bye."
 		}, {
-			"name": "",
+			"name": "IRA",
 			"line": "Be brave."
 		}]
 	},
@@ -552,12 +576,13 @@
 			"line": "he’s nowhere – but all around -"
 		}, {
 			"name": "",
-			"line": "following us. Me."
+			"line": "following us. Me.",
+			"hideVideo": "true"
 		}, {
-			"name": "HEXATE",
-			"line": "[whispering words in background]",
-			"showWords": ["Let me go", "Ira", "Don't touch me", "Stupid", "Unwanted", "Complete",  "Shame", "Hopeless", "Worthless", "Idiot", "Stop me", "Ira", "Hopeless", "Failure"]
-
+			"name": "",
+			"line": "[words whispering]",
+			"showWords": ["Let me go", "Ira", "Don't touch me", "Stupid", "Unwanted", "Complete",  "Shame", "Hopeless", "Worthless", "Idiot", "Stop me", "Ira", "Hopeless", "Failure"],
+			"showVideo": "true"
 		}, {
 			"name": "IRA",
 			"line": "I can taste his breath, smell his"
@@ -620,7 +645,9 @@
 			"line": "listen, he’s consuming her –"
 		}, {
 			"name": "HEXATE",
-			"line": "[goes silent]"
+			"line": "[falls silent]",
+			"hideVideo": "true",
+			"hideWords": "true"
 		}, {
 			"name": "",
 			"line": "I wake up. Feeling –"
@@ -862,6 +889,9 @@
 			"name": "",
 			"line": "Who’s a good little girl?"
 		}, {
+			"name": "IRA",
+			"line": "[shouts in pain]"
+		}, {
 			"name": "LEE",
 			"line": "Ira?"
 		}, {
@@ -881,7 +911,7 @@
 			"line": "I’d like to see you again. Let me know."
 		}, {
 			"name": "",
-			"line": "[whistling]"
+			"line": "[Eerie \"Don't Worry Be Happy\" playing]"
 		}]
 
 	},
@@ -974,7 +1004,7 @@
 			"line": "Seriously though, you’ll want to hear this…"
 		}, {
 			"name": "",
-			"line": "[mumuring in background]"
+			"line": "[Tess is murmuring in background]"
 		}, {
 			"name": "IRA",
 			"line": "This chick. She’s everywhere."
@@ -991,7 +1021,7 @@
 			"name": "",
 			"line": "or,"
 		}, {
-			"name": "TESS",
+			"name": "",
 			"line": "[murmur continues]"
 		}, {
 			"name": "IRA",
@@ -999,6 +1029,9 @@
 		}, {
 			"name": "",
 			"line": "but I can’t see that stopping her."
+		}, {
+			"name": "",
+			"line": "[freezes]"
 		}, {
 			"name": "",
 			"line": "What did you just say?"
@@ -1180,7 +1213,7 @@
 			"name": "IRA",
 			"line": "No. I just ‘was’, then he-"
 		}, {
-			"name": "",
+			"name": "HEXATE",
 			"line": "broke you?"
 		}, {
 			"name": "",
@@ -1238,9 +1271,6 @@
 			"line": "winkey face."
 		}, {
 			"name": "",
-			"line": "Us?"
-		}, {
-			"name": "",
 			"line": "\"Ok guys, please stop – love heart -"
 		}, {
 			"name": "",
@@ -1255,7 +1285,7 @@
 			"name": "",
 			"line": "Blowing kiss smiley face…\""
 		}, {
-			"name": "IRA",
+			"name": "",
 			"line": "So, people don’t change."
 		}, {
 			"name": "",

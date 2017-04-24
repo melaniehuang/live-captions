@@ -25,7 +25,6 @@ function setup(){
 }
 
 function draw(){
-  blendMode(MULTIPLY); 
   rothko();
 }
 
@@ -57,15 +56,30 @@ function keyPressed() {
 
   if (keyCode === 80 && paintOn == false){
     paintOn = true;
-    paintCanvas.style("visibility", "visible");
+    paintCanvas.style("opacity", "0.8");
+    paintCanvas.style("transition", "opacity 0.2s ease"); 
   } else if (keyCode === 80 && paintOn == true){
     paintOn = false;
-    paintCanvas.style("visibility", "hidden");
+    paintCanvas.style("opacity", "0");
+    paintCanvas.style("transition", "opacity 0.2s ease"); 
   }
 
   //Scene 10 Monologue
   if (keyCode === 77) {
     scrollText();
+  }
+
+  if (keyCode === 78) {
+    document.getElementById("pScroll").style.opacity = 0;
+    document.getElementById("pScroll").style.transition = "opacity 0.2s ease";
+  }
+
+  if (keyCode === 49) {
+    goToPreviousScene();
+  }
+
+  if (keyCode === 50) {
+    goToNextScene();
   }
 
   return false;
@@ -75,22 +89,46 @@ function selectLine(){
   var line = scenes[currentScene]["lines"][currentLine];
 	var character = line.name;
 	var speech = line.line;
+  
+  var toneDescription = speech.includes("[");
 
 	if (character == ""){
-	  document.getElementById("pCaption").innerHTML = speech; 
+    document.getElementById("pCaption").style.fontStyle = "normal";
+	  
+    if (toneDescription == true){
+      var startSfx = speech.indexOf("[");
+      var endSfx = speech.indexOf("]");
+      console.log(startSfx, endSfx);
+      document.getElementById("pCaption").innerHTML = "<i>" + speech.slice(startSfx, endSfx+1) + "</i>" + speech.slice(endSfx+1);
+    } else {
+      document.getElementById("pCaption").innerHTML = speech; 
+    }
 	} else {
     if (captionColor == "white"){
       captionColor = "yellow";
     } else {
       captionColor = "white";
     }
-
+    document.getElementById("pCaption").style.fontStyle = "normal";
     document.getElementById("pCaption").style.color = captionColor;
-	  document.getElementById("pCaption").innerHTML = "[ " + character + " ]: " + speech; 
+	   
+
+    if (toneDescription == true){
+      var startSfx = speech.indexOf("[");
+      var endSfx = speech.indexOf("]");
+      console.log(startSfx, endSfx);
+      document.getElementById("pCaption").innerHTML = "[ " + character + " ]: <i>" + speech.slice(startSfx, endSfx+1) + "</i>" + speech.slice(endSfx+1);
+    } else {
+      document.getElementById("pCaption").innerHTML = "[ " + character + " ]: " + speech;
+    }
 	}
 
   if (line["showWords"]) {
     showWords(line["showWords"]);
+  }
+  
+  if (line["hideWords"]) {
+    hideWords();
   }
 
   if (line["showVideo"]) {
@@ -103,8 +141,10 @@ function selectLine(){
 }
 
 function goToNextScene() {
+  
   if (currentScene < scenes.length) {
     currentScene++;
+    console.log(currentScene);
     currentLine = -1;
   }
 }
@@ -112,23 +152,25 @@ function goToNextScene() {
 function goToPreviousScene() {
   if (currentScene > 0) {
     currentScene--;
+    console.log(currentScene);
     currentLine = scenes[currentScene]["lines"].length;
   }
 }
 
 function showVideo() {
-  document.getElementById("vidHexate").style.visibility = "visible";
+  var vidHexate = document.getElementById("vidHexate");
+  vidHexate.style.opacity = 0.8;
+  vidHexate.style.transition = "opacity 0.3s ease"; 
 }
 
 function hideVideo() {
-  document.getElementById("vidHexate").style.visibility = "hidden";  
+  document.getElementById("vidHexate").style.opacity = 0;  
 }
 
 function showWord(word){
   var pWords = document.getElementById("pWords");
 
-  pWords.style.marginLeft = int(random(-400,400))+"px";
-  pWords.style.marginTop = int(random(0,400))+"px";
+  pWords.style.marginLeft = int(random(-200,200))+"px";
   pWords.innerHTML =  word; 
 }
 
@@ -138,29 +180,34 @@ function showWords(words) {
 
     setTimeout(function(){
       showWords(words.slice(1, words.length))
-    }, 1800);
+    }, 1200);
   } else {
     showWord("");
   }  
+}
+
+function hideWords(){
+  showWord("");
 }
 
 function scrollText() {
     var charMono = scenes[9]["lines"][0].name;
     var lineMono = scenes[9]["lines"][0].line;
     document.getElementById("pScroll").innerHTML = "[ " + charMono + " ]: " + lineMono; 
-    
     var elem = document.getElementById("pScroll");
      
-    var pos = 800;
-    var id = setInterval(frame, 12);
+    var pos = 599;
+    var id = setInterval(frame, 14);
+    elem.style.opacity = 1;
+
     function frame() {
-        elem.style.visibility = "visible"; 
-        if (pos == -3600) {
-            clearInterval(id);
-        } else {
-            pos--; 
-            elem.style.top = pos + 'px'; 
-        }
+      if (pos == -3600 || elem.style.opacity == 0) {
+        pos = 600;
+        elem.style.opacity = 0;
+      } else if (pos < 600) {
+        pos--; 
+        elem.style.top = pos + 'px'; 
+      }     
     }
 }
 
@@ -180,26 +227,8 @@ function captionSharp(){
   document.getElementById("pCaption").style.transition = "all 0.4s ease";    
 }
 
-/*  
-
-    "sceneSevenWords": [{
-      "line": "Filth", "Can we play too?", "little whore", "bites", "scratch", "spine", "dig deep little nails", "mark her quick", "gouge"
-    }, {
-      "line": "Can we play too?"
-    }, {
-      "line": "little whore"
-    }, {
-      "line": "bites"
-    }, {
-      "line": "scratch"
-    }, {
-      "line": "spine"
-    }, {
-      "line": "dig deep little nails"
-    }, {
-      "line": "mark her quick"
-    }, {
-      "line": "gouge"
-    }, {
-      "line": ""
-    }]*/
+/* TO DO: 
+- SFX italic
+- Looped words until hideWords
+- Monologue smoothness
+- Monologue off */
