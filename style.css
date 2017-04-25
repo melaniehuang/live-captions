@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-	background:#19191E;
+	background:#00002c;
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 400;
 	font-size: 42px;
@@ -48,9 +48,9 @@ canvas {
 
 #vidHexate {
     position: absolute;
-    width: 1400px;
-    left: 0px;
-    top: 0px;
+    width: 2200px;
+    left: -400px;
+    top: 200px;
     z-index: -3;
     opacity: 0;
 }
@@ -65,7 +65,7 @@ canvas {
 #pScroll {
 	font-family: 'Fjalla One',sans-serif;
 	position: relative;
-    width:600px;
+    max-width:1000px;
     margin-top: 0px;
     text-align: center;
     font-size: 52px;
@@ -78,9 +78,12 @@ canvas {
 
 #pWords {
 	font-family: 'Fjalla One', sans-serif;
+	position: absolute;
+	width:1200px;
+    height:100px;
+    top:700px;
 	font-weight: 700;
 	font-size: 90px;
-	margin-top: 30px;
 	color: transparent;
 	text-shadow: 0 0 10px rgba(255,255,255,0.6);
 }

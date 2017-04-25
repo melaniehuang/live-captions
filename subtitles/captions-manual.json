@@ -1,17 +1,4 @@
 [{
-		"name": "Scene One",
-		"lines": [{
-			"name": "",
-			"line": "",
-			"hideVideo": "true"
-		},{
-			"name": "",
-			"line": "",
-			"showVideo": "true"
-		}]
-	},
-
-{
 		"name": "Scene Two",
 	  	"lines": [{
 			"name": "",
@@ -22,7 +9,10 @@
 			"line": "Ira"
 		}, {
 			"name": "",
-			"line": "[chanting] Ira Ira!"
+			"line": "Ira"
+		}, {
+			"name": "",
+			"line": "Ira!"
 		}, {
 			"name": "IRA",
 			"line": "Right. It’s happening. I have got to move this shit around."
@@ -64,7 +54,10 @@
 			"line": "Jumpy... Anger, or..."
 		}, {
 			"name": "",
-			"line": "Was it the banging of his fist on your door?"
+			"line": "Was it the banging of his fist on your"
+		}, {
+			"name": "",
+			"line": "door?"
 		}, {
 			"name": "",
 			"line": "Familiar..."
@@ -93,7 +86,10 @@
 		"name": "Scene Three",
 		"lines": [{
 			"name": "IRA",
-			"line": "Easy. I’m so glad your free - no really, I -"
+			"line": "Easy. I’m so glad you're free -"
+		}, {
+			"name": "",
+			"line": "no really, I -"
 		}, {
 			"name": "",
 			"line": "I’ve missed you too. Ok, bye!"
@@ -125,10 +121,10 @@
 			"line": "I feel like I should make a complaint-"
 		}, {
 			"name": "IRA",
-			"line": "A complaint? It’s 2am, the guy was probably"
+			"line": "A complaint?"
 		}, {
 			"name": "",
-			"line": "trying to stay awake-"
+			"line": "It’s 2am, the guy was probably trying to stay awake-"
 		}, {
 			"name": "TESS",
 			"line": "[imitating driver] \"What do you get up to for fun?\""
@@ -146,7 +142,7 @@
 			"line": "It is damned, isn’t it."
 		}, {
 			"name": "TESS",
-			"line": "[addressing audience] Will she ever get wet again?"
+			"line": "Will she ever get wet again?"
 		}, {
 			"name": "IRA",
 			"line": "You can laugh but it's a serious que-"
@@ -269,7 +265,7 @@
 			"line": "Oh, that/"
 		}, {
 			"name": "LEE",
-			"line": "looks like fun. I wish I was brave enough to try"
+			"line": "Looks like fun. I wish I was brave enough to try"
 		}, {
 			"name": "IRA",
 			"line": "A too convenient distraction."
@@ -305,7 +301,7 @@
 			"line": "cause her girlfriend-"
 		}, {
 			"name": "IRA",
-			"line": "SHhh, fuck Tess shut up! What do you-"
+			"line": "Shhh, fuck Tess shut up! What do you-"
 		}, {
 			"name": "TESS",
 			"line": "Look I just got texted to work tomorrow,"
@@ -323,13 +319,13 @@
 			"line": "Yes you will."
 		}, {
 			"name": "",
-			"line": "I left my pouch outside, walk out with me?"
+			"line": "I left my ciggies outside, walk out with me?"
+		}, {
+			"name": "",
+			"line": ""
 		}, {
 			"name": "IRA",
 			"line": "Sorry – don’t stop on my account!"
-		}, {
-			"name": "HEXATE",
-			"line": "[growls]"
 		}]
 	},
 
@@ -343,7 +339,7 @@
 		}, {
 			"name": "HEXATE",
 			"line": "Look at you",
-			"showWords": ["Look at you","Nice","It's been a while","Anything", "Little Ira","It's been a while","Anything", "Little Ira"],
+			"showWords": ["Look at you", "Mmm that felt", "Nice", "It's been a while", "Anything", "Little Ira"],
 			"showVideo": "true"
 		}, {
 			"name": "",
@@ -370,7 +366,7 @@
 			"hideWords": "true"
 		}, {
 			"name": "",
-			"line": "[phone ringing]"
+			"line": ""
 		}, {
 			"name": "IRA",
 			"line": "Hello?"
@@ -400,10 +396,10 @@
 			"line": "They make me shit weird"
 		}, {
 			"name": "IRA'S MOTHER",
-			"line": "IRA!"
+			"line": "Ira!"
 		}, {
 			"name": "",
-			"line": "Don’t use those words please!"
+			"line": "Don’t use those words please."
 		}, {
 			"name": "",
 			"line": "That is not how I raised you."
@@ -427,13 +423,13 @@
 			"line": "I know I raised you to be."
 		}, {
 			"name": "IRA",
-			"line": "look mum I’ve got to-"
+			"line": "Look mum I’ve got to-"
 		}, {
 			"name": "IRA'S MOTHER",
-			"line": "you sound happy – at least"
+			"line": "You sound happy – at least."
 		}, {
 			"name": "",
-			"line": "relaxed? you did sleep well then?"
+			"line": "Relaxed? You did sleep well then?"
 		}, {
 			"name": "",
 			"line": "Have good dreams?"
@@ -531,10 +527,16 @@
 			"line": "are making out. Quite…"
 		}, {
 			"name": "",
-			"line": "passionately. Then I start to feel him. His –"
+			"line": "passionately."
 		}, {
 			"name": "",
-			"line": "fingers. All over me."
+			"line": "Then I start to feel him. His –"
+		}, {
+			"name": "",
+			"line": "fingers."
+		}, {
+			"name": "",
+			"line": "All over me."
 		}, {
 			"name": "",
 			"line": "Just jabbing, prodding,"
@@ -581,7 +583,7 @@
 		}, {
 			"name": "",
 			"line": "[words whispering]",
-			"showWords": ["Let me go", "Ira", "Don't touch me", "Stupid", "Unwanted", "Complete",  "Shame", "Hopeless", "Worthless", "Idiot", "Stop me", "Ira", "Hopeless", "Failure"],
+			"showWords": ["Let me go", "Ira", "Look at you", "Don't touch me", "Stupid", "Liar", "Ira", "You can't touch me", "Ira", "So", "dramatic", "Unwanted", "Complete", "Shame", "Hopeless", "Ira", "Worthless", "Idiot", "Stop me", "Ira", "Hopeless", "Failure", "You can't touch me", "Let me go"],
 			"showVideo": "true"
 		}, {
 			"name": "IRA",
@@ -771,6 +773,9 @@
 			"name": "",
 			"line": "Yeah where are you, come outside?"
 		}, {
+			"name": "",
+			"line": ""
+		}, {
 			"name": "LEE",
 			"line": "Oh my god – Ira! Hi!"
 		}, {
@@ -816,9 +821,12 @@
 			"name": "",
 			"line": "Do you want to kiss me?"
 		}, {
+			"name": "",
+			"line": ""
+		}, {
 			"name": "HEXATE",
 			"line": "Ira",
-			"showWords": ["Filth", "Can we play too?", "little whore", "bites", "scratch", "spine", "dig deep little nails", "mark her quick", "gouge"]
+			"showWords": ["Ira", "You", "Filth", "Filthy little girl", "playing with girls", "can we play too?", "little Ira", "little whore", "bites", "scratch", "spine", "dig deep little nails", "mark her quick", "gouge"]
 		}, {
 			"name": "",
 			"line": "You / filth"
@@ -863,10 +871,12 @@
 			"line": "dig deep little nails"
 		}, {
 			"name": "",
-			"line": "make your mark"
+			"line": "make your mark",
+			"hideVideo": "true"
 		}, {
 			"name": "",
-			"line": "Mark her /quick"
+			"line": "Mark her /quick",
+			"showVideo": "true"
 		}, {
 			"name": "",
 			"line": "Cut/"
@@ -890,7 +900,8 @@
 			"line": "Who’s a good little girl?"
 		}, {
 			"name": "IRA",
-			"line": "[shouts in pain]"
+			"line": "[a distressed cry]",
+			"hideVideo": "true"
 		}, {
 			"name": "LEE",
 			"line": "Ira?"
@@ -909,9 +920,6 @@
 		}, {
 			"name": "",
 			"line": "I’d like to see you again. Let me know."
-		}, {
-			"name": "",
-			"line": "[Eerie \"Don't Worry Be Happy\" playing]"
 		}]
 
 	},
@@ -956,7 +964,7 @@
 			"line": "Why are you here?"
 		}, {
 			"name": "TESS",
-			"line": "after you ditched me at the smokers"
+			"line": "After you ditched me at the smokers"
 		}, {
 			"name": "",
 			"line": "I ended up going home with this weirdo,"
@@ -1003,9 +1011,6 @@
 			"name": "",
 			"line": "Seriously though, you’ll want to hear this…"
 		}, {
-			"name": "",
-			"line": "[Tess is murmuring in background]"
-		}, {
 			"name": "IRA",
 			"line": "This chick. She’s everywhere."
 		}, {
@@ -1018,11 +1023,14 @@
 			"name": "",
 			"line": "She’s always got some ridiculous story about"
 		}, {
-			"name": "",
+			"name": "TESS",
+			"line": "- Davos -"
+		}, {
+			"name": "IRA",
 			"line": "or,"
 		}, {
-			"name": "",
-			"line": "[murmur continues]"
+			"name": "TESS",
+			"line": "Leela. I know right, Leela and Davos? Ridiculous."
 		}, {
 			"name": "IRA",
 			"line": "I should probably just tell her that"
@@ -1030,14 +1038,23 @@
 			"name": "",
 			"line": "but I can’t see that stopping her."
 		}, {
-			"name": "",
-			"line": "[freezes]"
+			"name": "TESS",
+			"line": "… is dating this new chick right,"
+		}, {
+			"name": "TESS",
+			"line": "and she’s like way younger than him it’s so creepy,"
+		}, {
+			"name": "TESS",
+			"line": "like exactly how you told me he was, and-"
 		}, {
 			"name": "",
+			"line": ""
+		}, {
+			"name": "IRA",
 			"line": "What did you just say?"
 		}, {
 			"name": "TESS",
-			"line": "He’s dating some sixteen year-old or something,"
+			"line": "He’s dating some sixteen-year-old or something,"
 		}, {
 			"name": "",
 			"line": "super rough, I mean what’s that,"
@@ -1064,10 +1081,10 @@
 			"line": "How old is she?"
 		}, {
 			"name": "TESS",
-			"line": "Aw babe you’re not seriously"
+			"line": "Aw babe you’re not seriously still"
 		}, {
 			"name": "",
-			"line": "still hung up on him are you?"
+			"line": "hung up on him are you?"
 		}, {
 			"name": "IRA",
 			"line": "Are you kidding?"
@@ -1079,22 +1096,22 @@
 			"line": "Ira, I know it was hard,"
 		}, {
 			"name": "",
-			"line": "but it’s been 2 years-"
+			"line": "but it’s been 2 years -"
 		}, {
 			"name": "IRA",
 			"line": "Exactly, Tess it’s been two years."
 		}, {
 			"name": "TESS",
-			"line": "So , you should be able to talk"
+			"line": "So , you should be able to talk about him"
 		}, {
 			"name": "",
-			"line": "about him without getting all ‘anxious’-"
+			"line": "without getting all ‘anxious’ -"
 		}, {
 			"name": "IRA",
 			"line": "All anxious?"
 		}, {
 			"name": "",
-			"line": "If I’m ‘anxious ’ it’s probably because"
+			"line": "If I’m 'anxious’ it’s probably because"
 		}, {
 			"name": "",
 			"line": "you walked into my house and woke me up,"
@@ -1114,6 +1131,9 @@
 			"name": "",
 			"line": "I can’t do this. You need to leave."
 		}, {
+			"name": "",
+			"line": ""
+		}, {
 			"name": "TESS",
 			"line": "Who the fuck are you, Ira?"
 		}, {
@@ -1127,7 +1147,7 @@
 			"line": "Ira?"
 		}, {
 			"name": "",
-			"line": "what will you do with this?"
+			"line": "What will you do with this?"
 		}, {
 			"name": "IRA",
 			"line": "It’s ok, really,"
@@ -1247,9 +1267,6 @@
 			"line": "They’re flirting in the comments!"
 		}, {
 			"name": "",
-			"line": "[pauses]"
-		}, {
-			"name": "",
 			"line": "Oh god."
 		}, {
 			"name": "",
@@ -1265,25 +1282,19 @@
 			"line": "\"Yeah cool dude, she does when you're"
 		}, {
 			"name": "",
-			"line": "\"loser ass isn’t holding her down\"- "
+			"line": "\"loser ass isn’t holding her down 😉.\""
 		}, {
 			"name": "",
-			"line": "winkey face."
+			"line": "\"Ok guys, please stop – ❤️"
 		}, {
 			"name": "",
-			"line": "\"Ok guys, please stop – love heart -"
+			"line": "- I ❤️ you baby,"
 		}, {
 			"name": "",
-			"line": "I – love heart – you baby, and"
+			"line": "and I’ve deleted this child from my friends. ❤️"
 		}, {
 			"name": "",
-			"line": "I’ve deleted this child from my friends."
-		}, {
-			"name": "",
-			"line": "Love heart - nobody calls you a loser."
-		}, {
-			"name": "",
-			"line": "Blowing kiss smiley face…\""
+			"line": "- nobody calls you a loser. 😚\""
 		}, {
 			"name": "",
 			"line": "So, people don’t change."
@@ -1308,9 +1319,6 @@
 		}, {
 			"name": "",
 			"line": "I was 16, I’m still here, I could’ve said no."
-		}, {
-			"name": "",
-			"line": "[pause]"
 		}, {
 			"name": "",
 			"line": "I didn’t know that then, but I could’ve."
@@ -1343,7 +1351,7 @@
 			"line": "What do you want?"
 		}, {
 			"name": "",
-			"line": "A Black Out?"
+			"line": "A black out?"
 		}, {
 			"name": "",
 			"line": "Some other protagonist with a little"

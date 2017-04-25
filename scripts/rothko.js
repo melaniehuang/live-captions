@@ -9,7 +9,7 @@ function rothko(){
     i++;
     var wr = random(-1,1);
     var hr = random(-1,1);
-    fill(100,100,100,random(5,10));
+    fill(76,76,107,random(5,10));
      
     if (i%100 == 0){
       origin = createVector(random(10,windowWidth-10),random(10,windowHeight-10));
@@ -17,7 +17,7 @@ function rothko(){
     }
 
     rect(origin.x,origin.y,origin.x - w*wr,origin.y - h*hr);
-    fill(120,120,120,random(3,10));
+    fill(102,102,128,random(5,10));
     rect(origin.x,origin.y,origin.x - w*wr,origin.y - h*hr);    
   }
 

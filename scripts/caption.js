@@ -57,11 +57,11 @@ function keyPressed() {
   if (keyCode === 80 && paintOn == false){
     paintOn = true;
     paintCanvas.style("opacity", "0.8");
-    paintCanvas.style("transition", "opacity 0.2s ease"); 
+    paintCanvas.style("transition", "opacity 2.5s ease"); 
   } else if (keyCode === 80 && paintOn == true){
     paintOn = false;
     paintCanvas.style("opacity", "0");
-    paintCanvas.style("transition", "opacity 0.2s ease"); 
+    paintCanvas.style("transition", "opacity 2.5s ease"); 
   }
 
   //Scene 10 Monologue
@@ -71,7 +71,7 @@ function keyPressed() {
 
   if (keyCode === 78) {
     document.getElementById("pScroll").style.opacity = 0;
-    document.getElementById("pScroll").style.transition = "opacity 0.2s ease";
+    document.getElementById("pScroll").style.transition = "opacity 0.5s ease";
   }
 
   if (keyCode === 49) {
@@ -82,6 +82,9 @@ function keyPressed() {
     goToNextScene();
   }
 
+  if (keyCode == 79){
+    clear(); 
+  } 
   return false;
 }
 
@@ -90,8 +93,7 @@ function selectLine(){
 	var character = line.name;
 	var speech = line.line;
   
-  var toneDescription = speech.includes("[");
-
+  var toneDescription = speech.includes("[");  
 	if (character == ""){
     document.getElementById("pCaption").style.fontStyle = "normal";
 	  
@@ -159,7 +161,7 @@ function goToPreviousScene() {
 
 function showVideo() {
   var vidHexate = document.getElementById("vidHexate");
-  vidHexate.style.opacity = 0.8;
+  vidHexate.style.opacity = 1.0;
   vidHexate.style.transition = "opacity 0.3s ease"; 
 }
 
@@ -170,7 +172,8 @@ function hideVideo() {
 function showWord(word){
   var pWords = document.getElementById("pWords");
 
-  pWords.style.marginLeft = int(random(-200,200))+"px";
+  pWords.style.marginLeft = int(random(-400,100))+"px";
+  pWords.style.marginTop = int(random(-100,100))+"px";
   pWords.innerHTML =  word; 
 }
 
@@ -191,20 +194,20 @@ function hideWords(){
 }
 
 function scrollText() {
-    var charMono = scenes[9]["lines"][0].name;
-    var lineMono = scenes[9]["lines"][0].line;
+    var charMono = scenes[8]["lines"][0].name;
+    var lineMono = scenes[8]["lines"][0].line;
     document.getElementById("pScroll").innerHTML = "[ " + charMono + " ]: " + lineMono; 
     var elem = document.getElementById("pScroll");
      
-    var pos = 599;
-    var id = setInterval(frame, 14);
+    var pos = 699;
+    var id = setInterval(frame, 20);
     elem.style.opacity = 1;
 
     function frame() {
       if (pos == -3600 || elem.style.opacity == 0) {
-        pos = 600;
+        pos = 700;
         elem.style.opacity = 0;
-      } else if (pos < 600) {
+      } else if (pos < 700) {
         pos--; 
         elem.style.top = pos + 'px'; 
       }     
@@ -214,7 +217,7 @@ function scrollText() {
 function blurOut(){
 	document.getElementById("pCaption").style.textShadow = "0 0 100px "+captionColor;
   document.getElementById("pCaption").style.color = "transparent";
-  document.getElementById("pCaption").style.transition = "all 0.4s ease";
+  document.getElementById("pCaption").style.transition = "all 0.5s ease";
 
   setTimeout(function (){
     document.getElementById("pCaption").innerHTML =  ""; 
@@ -224,7 +227,7 @@ function blurOut(){
 function captionSharp(){
   document.getElementById("pCaption").style.textShadow = "0 0 0px "+captionColor;
   document.getElementById("pCaption").style.color = captionColor;
-  document.getElementById("pCaption").style.transition = "all 0.4s ease";    
+  document.getElementById("pCaption").style.transition = "all 0.5s ease";    
 }
 
 /* TO DO: 
