@@ -161,7 +161,7 @@ function goToPreviousScene() {
 
 function showVideo() {
   var vidHexate = document.getElementById("vidHexate");
-  vidHexate.style.opacity = 1.0;
+  vidHexate.style.opacity = 0.9;
   vidHexate.style.transition = "opacity 0.3s ease"; 
 }
 
